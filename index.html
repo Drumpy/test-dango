@@ -210,8 +210,17 @@
     </dialog>
   </main>
 
-  <script src="index.js"></script>
+  <script type="module" src="index.js"></script>
+  <script type="module" src="cart.js"></script>
   <script type="module" src="swiper.js"></script>
+
+  <script>
+    function removeItemFromCart(itemId) {
+      cartItems = cartItems.filter((item) => item.itemId !== itemId);
+      updateCartDOM();
+      updateCartCounter();
+    }
+  </script>
 </body>
 
 </html>
