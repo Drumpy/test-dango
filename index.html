@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test Dango</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="overflow-x-hidden">
+  <main>
+    <!-- Featured Section -->
+    <div class="py-2 bg-primary">
+      <p class="text-center text-[11px] text-white">30% Off All Orders Until 4/27</p>
+    </div>
+
+    <!-- Navbar -->
+    <header class="container flex items-center justify-center py-0 mx-auto sm:py-6">
+      <div class="hidden w-10 h-10 bg-transparent rounded-full sm:block"></div>
+      <nav class="flex flex-wrap items-center justify-between w-full px-4 py-4 text-lg bg-white sm:justify-center md:py-0">
+        <!-- Navbar icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" id="navbar-button" class="block w-6 h-6 cursor-pointer md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <div class="hidden w-full md:flex md:items-center md:w-auto" id="navbar">
+          <ul class="flex flex-col items-center justify-center gap-4 pt-4 text-base uppercase sm:gap-8 sm:flex-row text-primary md:flex md:justify-between md:pt-0">
+            <li><a href="#" class="font-bold border-b-4 border-primary">Home</a></li>
+            <li><a href="#">ITEM 1</a></li>
+            <li><a href="#">ITEM 2</a></li>
+            <li><a href="#">ITEM 3</a></li>
+            <li><a href="#">ITEM 4</a></li>
+            <li><a href="#">ITEM 5</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Cart counter -->
+      <div class="flex items-center justify-center text-[#3A2676] ml-auto relative mr-4 mt-4 self-start sm:self-auto">
+        <button>
+          <svg width="14" height="19" viewBox="0 0 14 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.1495 4.31124H10.5406C10.5406 2.41272 9.1005 0.875 7.32257 0.875C5.54463 0.875 4.10458 2.41272 4.10458 4.31124H2.49559C1.61064 4.31124 0.886597 5.0844 0.886597 6.02937V16.3381C0.886597 17.2831 1.61064 18.0562 2.49559 18.0562H12.1495C13.0345 18.0562 13.7585 17.2831 13.7585 16.3381V6.02937C13.7585 5.0844 13.0345 4.31124 12.1495 4.31124ZM7.32257 2.59312C8.20751 2.59312 8.93156 3.36628 8.93156 4.31124H5.71358C5.71358 3.36628 6.43762 2.59312 7.32257 2.59312ZM12.1495 16.3381H2.49559V6.02937H4.10458V7.74749C4.10458 8.21997 4.46661 8.60655 4.90908 8.60655C5.35155 8.60655 5.71358 8.21997 5.71358 7.74749V6.02937H8.93156V7.74749C8.93156 8.21997 9.29358 8.60655 9.73606 8.60655C10.1785 8.60655 10.5406 8.21997 10.5406 7.74749V6.02937H12.1495V16.3381Z" fill="#3A2676" />
+          </svg>
+        </button>
+        <span class="absolute -bottom-2 -right-2 border-2 border-[#3A2676] bg-primary text-white rounded-full text-[10px] min-w-4 h-4 pt-[2px] inline-flex justify-center items-center" id="cart-count">0</span>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section>
+      <!-- Slider main container -->
+      <div class="sm:h-[calc(100vh-126px)] swiper bg-swiper-background bg-no-repeat bg-cover flex flex-col relative">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="!flex  flex-col-reverse sm:flex-row items-center justify-between px-7 sm:px-32 swiper-slide text-primary pt-6 sm:pt-16 pb-20">
+            <div class="flex flex-col gap-y-6 max-w-[500px]">
+              <h2 class="text-4xl sm:text-6xl max-w-64 sm:max-w-full">Lorem ipsum dolor sit amet</h2>
+              <p class="hidden sm:inline">Nunc porttitor tortor metus, nec sagittis lectus accumsan quis. Aenean euismod mollis tempor.</p>
+              <div class="flex flex-col items-center sm:flex-row sm:inline-flex gap-x-4 gap-y-4 sm:gap-y-0">
+                <a href="#" class="inline-flex items-center py-5 pl-8 pr-10 text-xs text-white border-2 border-transparent rounded-lg sm:pr-16 bg-primary gap-7">
+                  SHOP NOW
+                  <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 1.3281L1.22022 0L8 7.42836L1.21337 14.8567L0 13.5286L5.57326 7.42836L0 1.3281Z" fill="white" />
+                  </svg>
+                </a>
+                <a href="#" class="inline-flex items-center py-5 pl-8 pr-5 text-xs border-2 rounded-lg sm:pr-16 border-primary gap-7">
+                  TAKE THE QUIZ
+                  <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 1.3281L1.22022 0L8 7.42836L1.21337 14.8567L0 13.5286L5.57326 7.42836L0 1.3281Z" fill="#7AA65A" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="max-w-[480px] max-h-[520px] overflow-hidden rounded-lg mb-10 sm:mb-0 aspect-square sm:aspect-auto object-cover">
+              <img src="/img/hero-1.webp" alt="Hero 1" class="object-cover w-full">
+            </div>
+          </div>
+          <div class="!flex  flex-col-reverse sm:flex-row items-center justify-between px-7 sm:px-32 swiper-slide text-primary pt-6 sm:pt-16 pb-20">
+            <div class="flex flex-col gap-y-6 max-w-[500px]">
+              <h2 class="text-4xl sm:text-6xl max-w-64 sm:max-w-full">Lorem ipsum dolor sit amet</h2>
+              <p class="hidden sm:inline">Nunc porttitor tortor metus, nec sagittis lectus accumsan quis. Aenean euismod mollis tempor.</p>
+              <div class="flex flex-col items-center sm:flex-row sm:inline-flex gap-x-4 gap-y-4 sm:gap-y-0">
+                <a href="#" class="inline-flex items-center py-5 pl-8 pr-10 text-xs text-white border-2 border-transparent rounded-lg sm:pr-16 bg-primary gap-7">
+                  SHOP NOW
+                  <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 1.3281L1.22022 0L8 7.42836L1.21337 14.8567L0 13.5286L5.57326 7.42836L0 1.3281Z" fill="white" />
+                  </svg>
+                </a>
+                <a href="#" class="inline-flex items-center py-5 pl-8 pr-5 text-xs border-2 rounded-lg sm:pr-16 border-primary gap-7">
+                  TAKE THE QUIZ
+                  <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 1.3281L1.22022 0L8 7.42836L1.21337 14.8567L0 13.5286L5.57326 7.42836L0 1.3281Z" fill="#7AA65A" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="max-w-[480px] max-h-[520px] overflow-hidden rounded-lg mb-10 sm:mb-0 aspect-square sm:aspect-auto object-cover">
+              <img src="/img/hero-2.webp" alt="Hero 2" class="object-cover w-full">
+            </div>
+          </div>
+          <div class="!flex  flex-col-reverse sm:flex-row items-center justify-between px-7 sm:px-32 swiper-slide text-primary pt-6 sm:pt-16 pb-20">
+            <div class="flex flex-col gap-y-6 max-w-[500px]">
+              <h2 class="text-4xl sm:text-6xl max-w-64 sm:max-w-full">Lorem ipsum dolor sit amet</h2>
+              <p class="hidden sm:inline">Nunc porttitor tortor metus, nec sagittis lectus accumsan quis. Aenean euismod mollis tempor.</p>
+              <div class="flex flex-col items-center sm:flex-row sm:inline-flex gap-x-4 gap-y-4 sm:gap-y-0">
+                <a href="#" class="inline-flex items-center py-5 pl-8 pr-10 text-xs text-white border-2 border-transparent rounded-lg sm:pr-16 bg-primary gap-7">
+                  SHOP NOW
+                  <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 1.3281L1.22022 0L8 7.42836L1.21337 14.8567L0 13.5286L5.57326 7.42836L0 1.3281Z" fill="white" />
+                  </svg>
+                </a>
+                <a href="#" class="inline-flex items-center py-5 pl-8 pr-5 text-xs border-2 rounded-lg sm:pr-16 border-primary gap-7">
+                  TAKE THE QUIZ
+                  <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 1.3281L1.22022 0L8 7.42836L1.21337 14.8567L0 13.5286L5.57326 7.42836L0 1.3281Z" fill="#7AA65A" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="max-w-[480px] max-h-[520px] overflow-hidden rounded-lg mb-10 sm:mb-0 aspect-square sm:aspect-auto object-cover">
+              <img src="/img/hero-3.webp" alt="Hero 3" class="object-cover w-full">
+            </div>
+          </div>
+        </div>
+        <!-- Navigation buttons -->
+        <div class="absolute z-50 flex justify-center w-full gap-2 px-32 sm:justify-start bottom-5 sm:bottom-32">
+          <button type="button" class="relative flex items-center justify-center px-3 py-2 text-white border-2 border-transparent rounded-full bg-primary swiper-prev">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 7H3.83L9.42 1.41L8 0L0 8L8 16L9.41 14.59L3.83 9H16V7Z" fill="currentColor" />
+            </svg>
+          </button>
+          <button type="button" class="relative flex items-center justify-center px-3 py-2 text-white border-2 border-transparent rounded-full bg-primary swiper-next">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 7H12.17L6.58 1.41L8 0L16 8L8 16L6.59 14.59L12.17 9H0V7Z" fill="currentColor" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Collection Section -->
+    <section class="max-w-[950px] py-20 mx-auto text-center px-4 sm:px-0">
+      <h2 class="text-3xl font-bold sm:text-4xl text-primary/60 mb-7">Featured Collection</h2>
+      <div class="grid grid-cols-2 lg:grid-cols-4 place-items-center gap-x-5 gap-y-6 sm:gap-y-12">
+        <article class="flex flex-col px-4 py-3 shadow-lg shadow-black/20 rounded-[20px] max-w-56">
+          <img src="img/collection-1.png" alt="Collection 1">
+          <div class="flex flex-col items-center justify-between gap-1 pt-4 pb-2 sm:gap-4 sm:flex-row">
+            <p>$<span data-featured-price>176.98</span></p>
+            <button type="button" class="px-3 py-1 text-white rounded-full bg-primary add-to-cart-btn" data-id="1" data-item-title="Item 1" data-item-price="176.98">BUY NOW</button>
+          </div>
+        </article>
+        <article class="flex flex-col px-4 py-3 shadow-lg shadow-black/20 rounded-[20px] max-w-56">
+          <img src="img/collection-2.png" alt="Collection 2">
+          <div class="flex flex-col items-center justify-between gap-1 pt-4 pb-2 sm:gap-4 sm:flex-row">
+            <p>$<span data-featured-price>126.98</span></p>
+            <button type="button" class="px-3 py-1 text-white rounded-full bg-primary add-to-cart-btn" data-id="2" data-item-title="Item 2" data-item-price="126.98">BUY NOW</button>
+          </div>
+        </article>
+        <article class="flex flex-col px-4 py-3 shadow-lg shadow-black/20 rounded-[20px] max-w-56">
+          <img src="img/collection-3.png" alt="Collection 3">
+          <div class="flex flex-col items-center justify-between gap-1 pt-4 pb-2 sm:gap-4 sm:flex-row">
+            <p>$<span data-featured-price>136.98</span></p>
+            <button type="button" class="px-3 py-1 text-white rounded-full bg-primary add-to-cart-btn" data-id="3" data-item-title="Item 3" data-item-price="136.98">BUY NOW</button>
+          </div>
+        </article>
+        <article class="flex flex-col px-4 py-3 shadow-lg shadow-black/20 rounded-[20px] max-w-56">
+          <img src="img/collection-4.png" alt="Collection 4">
+          <div class="flex flex-col items-center justify-between gap-1 pt-4 pb-2 sm:gap-4 sm:flex-row">
+            <p>$<span data-featured-price>146.98</span></p>
+            <button type="button" class="px-3 py-1 text-white rounded-full bg-primary add-to-cart-btn" data-id="4" data-item-title="Item 4" data-item-price="146.98">BUY NOW</button>
+          </div>
+        </article>
+        <article class="flex flex-col px-4 py-3 shadow-lg shadow-black/20 rounded-[20px] max-w-56">
+          <img src="img/collection-1.png" alt="Collection 5">
+          <div class="flex flex-col items-center justify-between gap-1 pt-4 pb-2 sm:gap-4 sm:flex-row">
+            <p>$<span data-featured-price>156.98</span></p>
+            <button type="button" class="px-3 py-1 text-white rounded-full bg-primary add-to-cart-btn" data-id="5" data-item-title="Item 5" data-item-price="156.98">BUY NOW</button>
+          </div>
+        </article>
+        <article class="flex flex-col px-4 py-3 shadow-lg shadow-black/20 rounded-[20px] max-w-56">
+          <img src="img/collection-3.png" alt="Collection 6">
+          <div class="flex flex-col items-center justify-between gap-1 pt-4 pb-2 sm:gap-4 sm:flex-row">
+            <p>$<span data-featured-price>166.98</span></p>
+            <button type="button" class="px-3 py-1 text-white rounded-full bg-primary add-to-cart-btn" data-id="6" data-item-title="Item 6" data-item-price="166.98">BUY NOW</button>
+          </div>
+        </article>
+        <article class="flex flex-col px-4 py-3 shadow-lg shadow-black/20 rounded-[20px] max-w-56">
+          <img src="img/collection-2.png" alt="Collection 7">
+          <div class="flex flex-col items-center justify-between gap-1 pt-4 pb-2 sm:gap-4 sm:flex-row">
+            <p>$<span data-featured-price>176.98</span></p>
+            <button type="button" class="px-3 py-1 text-white rounded-full bg-primary add-to-cart-btn" data-id="7" data-item-title="Item 7" data-item-price="176.98">BUY NOW</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Dialog -->
+    <dialog id="cart-dialog" class="fixed open:flex open:flex-col open:justify-center sm:open:block w-full h-full sm:h-fit sm:w-[480px] sm:rounded-md py-10 px-4 sm:border border-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white z-50 open:animate-fade-in open:backdrop:animate-fade-in">
+      <button id="close-dialog" type="button" class="absolute inline-flex items-center justify-center w-6 h-6 transition-opacity border border-black rounded-full right-6 top-6 opacity-30 hover:opacity-100">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" color="#000000">
+          <path d="M6.75827 17.2426L12.0009 12M17.2435 6.75736L12.0009 12M12.0009 12L6.75827 6.75736M12.0009 12L17.2435 17.2426" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <h2 class="mb-4 text-2xl font-bold">Cart Items</h2>
+      <div id="cart-items-list" class="flex flex-col"></div>
+      <hr class="my-6">
+      <p class="text-lg font-bold">Total: $<span id="cart-total">0</span></p>
+    </dialog>
+  </main>
+
+  <script src="index.js"></script>
+  <script type="module" src="swiper.js"></script>
+</body>
+
+</html>
