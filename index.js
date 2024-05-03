@@ -76,7 +76,9 @@ function updateCartTotal() {
 // Dialog
 // ****************************************
 
-closeDialogButton.addEventListener("click", closeDialog);
+if (closeDialogButton) {
+  closeDialogButton.addEventListener("click", closeDialog);
+}
 
 function showDialog() {
   if (cartDialog) {
@@ -97,6 +99,8 @@ function closeDialog() {
 const navbarButton = document.querySelector("#navbar-button");
 const navbarElement = document.querySelector("#navbar");
 
-navbarButton.addEventListener("click", () => {
-  navbarElement.classList.toggle("hidden");
-});
+if (navbarButton && navbarElement) {
+  navbarButton.addEventListener("click", () => {
+    navbarElement.classList.toggle("hidden");
+  });
+}
